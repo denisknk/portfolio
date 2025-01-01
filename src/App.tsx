@@ -1,10 +1,17 @@
 // import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import './App.css';
+import styled from 'styled-components';
 
-const Home = () => <h1>Home Page</h1>;
-const About = () => <h1>About Page</h1>;
-const NotFound = () => <h1>404 - Page Not Found</h1>;
+const Title = styled.h1`
+  color: #61dafb;
+  font-size: 2.5rem;
+  text-align: center;
+`;
+
+const Home = () => <Title>Home Page</Title>;
+const About = () => <Title>About Page</Title>;
+const NotFound = () => <Title>404 - Page Not Found</Title>;
 
 const App = () => {
   return (
